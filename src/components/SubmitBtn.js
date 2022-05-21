@@ -2,15 +2,13 @@ import React from "react";
 
 function SubmitBtn() {
   return (
-    <div>
-      <input
-        type="submit"
-        className="btn btn-primary btn-block"
-        value="Search"
-        //   @click.prevent="handleSearch"
-        //   v-else
-      />
-    </div>
+    <input
+      type="submit"
+      className="btn btn-primary"
+      value="Search"
+      //   @click.prevent="handleSearch"
+      //   v-else
+    />
   );
 }
 

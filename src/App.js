@@ -5,14 +5,14 @@ import Article from "./components/Article";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container w-50 mt-4">
       <div className="row">
         <Header />
 
-        <div className="row">
+        <div className="row mb-4">
           <div className="col-xl-12">
             <form className="form">
-              <div className="form-group">
+              <div className="form-group mb-2">
                 <InputField />
               </div>
               <div className="form-group">
