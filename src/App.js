@@ -31,11 +31,17 @@ function App() {
       console.error(error);
     }
 
-    console.log(result);
-    // setItems(result);
+    setItems((items = result.data.items));
 
-    // this.items = result.data.items;
-    // this.isFetchingData = false;
+    // Test with this rss urls -> https://abcnews.go.com/abcnews/usheadlines | https://rss.csmonitor.com/feeds/usa
+
+    // ASSIGNMENT
+    /*
+    /....
+    1. Show a default image if there's no image on the item
+    2. Disable the input and button elements when the data is being fetched and enable once the data is returned
+    ..../
+    */
   };
 
   const handleFormValidation = () => {
@@ -75,7 +81,16 @@ function App() {
         <div className="col-xl-12">
           <h1>Articles</h1>
 
-          <Article />
+          {items.map((item, key) => {
+            return (
+              <Article
+                key={key}
+                imgSrc={item.thumbnail}
+                title={item.title}
+                link={item.link}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

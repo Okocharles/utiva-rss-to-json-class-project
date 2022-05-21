@@ -9,8 +9,6 @@ function InputField(props) {
       required
       value={props.url}
       onChange={props.getUrl}
-      //   v-model.trim="rssUrl"
-      //   v-else
     />
   );
 }

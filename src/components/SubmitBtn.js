@@ -7,8 +7,6 @@ function SubmitBtn(props) {
       className="btn btn-primary"
       value="Search"
       onClick={props.handleSubmit}
-      //   @click.prevent="handleSearch"
-      //   v-else
     />
   );
 }
