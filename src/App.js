@@ -1,9 +1,11 @@
+import Header from './components/Header'
+
 function App() {
   return (
     <div className="container">
       <div className="row">
         <div className="col-xl-12">
-          <h1>RSS Feeds</h1>
+          <Header me="charles" />
         </div>
 
         <div className="row">
@@ -24,7 +26,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
