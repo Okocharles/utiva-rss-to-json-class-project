@@ -1,6 +1,15 @@
+import { useState } from "react";
+
 import Header from "./components/Header";
+import InputField from "./components/InputField";
 
 function App() {
+  const [url, setUrl] = useState("");
+  // let [items, setItems] = useState([]);
+  const baseUrl = "https://my-fliplet-test-api.herokuapp.com/api/v1/";
+
+  const getUrl = (event) => setUrl(event.target.value);
+
   return (
     <div className="container">
       <div className="row">
@@ -11,7 +20,9 @@ function App() {
         <div className="row">
           <div className="col-xl-12">
             <form className="form">
-              <div className="form-group">{/* <InputField /> */}</div>
+              <div className="form-group">
+                <InputField url={url} getUrl={getUrl} />
+              </div>
               <div className="form-group">{/* <SubmitBtn /> */}</div>
             </form>
           </div>
