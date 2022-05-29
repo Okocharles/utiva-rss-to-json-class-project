@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react'
 
-function SubmitBtn() {
-  return <div>SubmitBtn</div>;
+function SubmitBtn(props) {
+  return (
+    <input
+      type="submit"
+      className="btn btn-primary"
+      value="Search"
+      onClick={props.handleSubmit}
+    />
+  )
 }
 
-export default SubmitBtn;
+export default SubmitBtn
